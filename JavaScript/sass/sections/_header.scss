@@ -1,0 +1,223 @@
+header
+{
+    a
+    {
+        text-transform: uppercase;
+    }
+    .header-top
+    {
+        .dropdown-lang
+        {
+            position: relative;
+            display: inline-block;
+            &:hover
+            {
+                .dropdown-content
+                {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-left: -10px;
+                }
+            }
+            .dropdown-content
+            {
+                visibility: hidden;
+                opacity: 0;
+                margin-top: 2px;
+                position: absolute;
+                z-index: 1;
+                background-color: $mainColorWhite;
+                padding: 0px 0px;
+                width: 176px;
+                border: 2px solid $mainColor2;
+                transition: $transition;
+                ul
+                {
+                    hr
+                    {
+                        width: 80%;
+                        margin: 0;
+                    }
+                    li
+                    {
+                        width: 100%;
+                        padding: 5px 0px;
+                        &:hover
+                        {
+                            background-color: #f5f5f5;
+                        
+                        }
+                    }
+                }
+
+            }
+            .dropdown-content a
+            {
+                text-align: left;
+                text-transform: capitalize;
+                padding-left: 20px;
+                display: block;
+                @include a($mainFontSize/1.2, $mainFontWeight, $mainColor, $mainColor2, $letterSpacing);
+            
+            }
+        }
+        .dropdown-currency
+        {
+            @extend .dropdown-lang;
+            .dropdown-content
+            {
+                right: -20px;
+            }
+            a
+            {
+                text-transform: uppercase !important;
+            }
+        }
+        
+        a
+        {
+            @include a($mainFontSize/1.5, $mainFontWeight, $mainColorWhite, $mainColorWhite, $letterSpacing);
+        }
+        .purchase
+        {
+            padding: 5px 20px !important;
+            font-size: $mainFontSize/1.2;
+        }
+    }
+   
+        .fa-bars
+        {
+            color: $mainColorWhite;
+            width: 66px;
+            height: 66px;
+            background-color: $mainColor2;
+            position: relative;
+            right: 0;
+        }
+        ul.nav
+        {
+            
+            li
+            {
+                .dropdown-link
+                {
+                    position: relative;
+                    display: inline-block;
+                    &:hover
+                    {
+                        .dropdown-content
+                        {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    .dropdown-content
+                    {
+                        visibility: hidden;
+                        opacity: 0;
+                        background-color: $mainColor2;
+                        margin-top: 2px;
+                        position: absolute;
+                        z-index: 1;
+                        padding: 0px 0px;
+                        right: 0;
+                        width: 176px;
+                        border: 2px solid $mainColor2;
+                        transition: $transition;
+                        ul
+                        {
+                            hr
+                            {
+                                width: 100%;
+                                margin: 0;
+                            }
+                            li
+                            {
+                                width: 100%;
+                                padding: 5px 0px;
+                                &:hover
+                                {
+                                    background-color: darken($mainColor2, 3%);
+                                
+                                }
+                            }
+                        }
+
+                    }
+            .dropdown-content a
+            {
+                text-align: left;
+                text-transform: capitalize;
+                padding-left: 20px;
+                display: block;
+                @include a($mainFontSize/1.2, $mainFontWeight, darken($mainColorWhite, 10%), $mainColorWhite, $letterSpacing);
+            
+            }
+                }
+                a
+                {
+                    @include a($mainFontSize/1.2, $mainFontWeight, $mainColor, $mainColor2, $letterSpacing);
+                }
+            }
+            
+        }
+    
+}
+@media(min-width: 991.1px)
+{
+    .header-top
+    {
+       display: block flex; 
+    }
+}
+@media(max-width: 991px)
+{
+    .header-top
+    {
+        display: none;
+    }
+   
+    .menu-mobil
+    {
+        ul
+        {
+            li
+            {
+                
+                a
+                {
+                    color: $mainColorWhite;
+                    opacity: .7;
+                    font-weight: bold;
+                }
+                
+                background-color: $mainColor2;
+                text-transform: uppercase;
+                border-radius: 0 !important;
+                span
+                {
+                    position: relative;
+                    right: 10px;
+                    opacity: .7;
+                    background-color: $mainColorWhite;
+                    color: $mainColor2;
+                    font-size: $mainFontSize;
+                    padding: 0px 3px;
+                    border-radius: 100%;
+                }                
+            }
+            ul
+                {
+                    li
+                    {
+                        a
+                        {
+                            font-weight: $mainFontWeight;
+                            font-size: $mainFontSize/1.3;
+                        }
+                        
+                    }
+                }
+        }
+    }
+}

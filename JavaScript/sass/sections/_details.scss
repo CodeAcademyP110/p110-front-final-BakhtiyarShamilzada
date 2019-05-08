@@ -1,0 +1,76 @@
+#details
+{
+    background-color: darken($mainColorWhite, 5%);
+    color: $mainColorBlack;
+    .tag-details-btn
+    {
+        background-color: $mainColorWhite;
+        button
+        {
+            font-size: $mainFontSize/1.2 !important;
+            padding: 5px 15px !important;
+            @include button($mainColor, #d9d9d9, none, $mainColorWhite, $mainColor2, none);
+        }
+    }
+    .tag-details-content
+    {
+        background-color: $mainColorWhite;
+        .img
+        {
+            position: relative;
+            .save
+            {
+                border-radius: 100%;
+                width: 42px;
+                height: 42px;
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                background: #e01a33;
+                color: #fff;
+                font-size: 0.8333em;
+                text-align: center;
+                line-height: 1.0833em;
+            }
+        }
+        
+    }
+    .say
+    {
+        background-color: $mainColorWhite;
+        em
+        {
+            color: $mainColor2;
+            font-size: $mainFontSize*1.2;
+        }
+        .profil
+        {
+            img
+            {
+                border-radius: 100%;
+                width: 74px;
+                height: 74px;
+            }
+        }
+    }
+    color: $mainColor;
+    a
+    {
+        color: $mainColor;
+    }
+    .price
+    {
+        span
+        {
+            font-size: $mainFontSize*1.5;
+            color: #98ce44;
+        }
+        button
+        {
+            font-size: $mainFontSize/1.3 !important;
+            padding: 0px 15px !important;
+            @include button($mainColorWhite, #98ce44, none, $mainColorWhite, #98ce44, none);
+        }
+    }
+    
+}

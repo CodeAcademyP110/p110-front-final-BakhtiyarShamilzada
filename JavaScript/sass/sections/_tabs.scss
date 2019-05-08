@@ -1,0 +1,141 @@
+#tabs
+{
+    .tabs
+    {
+        position: relative;
+        top: -37px;
+        button
+        {
+            margin-right: 5px;
+            opacity: .5;
+            &:hover
+            {
+                opacity: 1;
+            }
+            @include button($mainColor, $mainColorWhite, none, $mainColorBlack, $mainColorWhite, none);
+        }
+        button.tab.active
+        {
+            opacity: 1;
+            @include button($mainColorBlack, $mainColorWhite, none, $mainColorBlack, $mainColorWhite, none);
+        }
+        
+    }
+    .tabs-mobil
+    {
+        .fa-long-arrow-alt-left
+        {
+            width: 30px;
+            height: 20px;
+            background-color: #d9d9d9;
+            color: $mainColorWhite;
+        }
+        .fa-long-arrow-alt-right
+        {
+            @extend .fa-long-arrow-alt-left;
+            background-color: $mainColor2;
+        }
+    }
+   
+    p
+    {
+        font-size: $mainFontSize/1.1;
+        color: $mainColor;
+    }
+    input
+    {
+        color: $mainColor;
+        padding: 0px 10px;
+        background-color: darken($mainColorWhite, 5%);
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 34px;
+        &:hover
+        {
+            outline: none;
+        }
+    }
+    .content-text
+    {
+        display: inline-block;
+        position: relative;
+        .fa-calendar-alt
+        {
+            position: absolute;
+            right: 0;
+            transform: translateY(-100%);
+            width: 30px;
+            height: 34px;
+            background-color: orange;
+            color: $mainColorWhite;
+        }
+        .fa-caret-down
+        {
+            @extend .fa-calendar-alt;
+        }
+        
+        .fa-check
+        {
+            position: absolute;
+            transform: translateY(-100%);
+            width: 30px;
+            height: 34px;
+            color: $mainColorWhite;
+            background-color: #7db921;
+            right: -30px;
+            cursor: pointer;
+        }
+        button
+        {
+            padding: 8.4px 20px !important;
+            font-size: $mainFontSize/1.2 !important;
+            @include button($mainColorWhite, #98ce44, none, $mainColorWhite, #7db921, none); 
+        }
+        &:hover
+        {
+            .fa-check
+            {
+                background-color: #98ce44;
+            }
+            button
+            {
+                background-color: #7db921;
+            }
+        }
+           
+    }
+    select
+    {
+        border: none;
+        outline: none;
+        width: 69px;
+        height: 34px;
+        background-color: darken($mainColorWhite, 5%);
+    }
+        
+    
+
+}
+@media(max-width: 991px)
+{
+    button
+    {
+        @include button($mainColor2, $mainColorWhite, none, $mainColorBlack, $mainColorWhite, none);
+    }
+}
+@media(max-width: 575.98px)
+{
+    .when
+    {
+        input
+        {
+            width: 60% !important;
+        }
+        .fa-calendar-alt
+        {
+            right: 33px !important;
+        }
+    }
+    
+}

@@ -1,0 +1,69 @@
+#before
+{
+    background-color: darken($mainColorWhite, 5%);
+    .item
+    {
+        background-color: $mainColorWhite;
+        .badge-pill
+        {
+            background-color: $mainColor2;
+            padding: 5px 8px;
+            font-size: $mainFontSize*1.1;
+        }
+        .badge-pill.active
+        {
+            background-color: darken($mainColorWhite, 5%);
+        }
+        .link
+        {
+            font-size: $mainFontSize*1.1;
+            &:hover
+            {
+                color: $mainColor2;
+            }
+        }
+        .accordion > li > div
+        {
+            cursor: pointer;
+        }
+    }
+    p
+    {
+        color: $mainColor;
+        font-size: $mainFontSize/1.3;
+        text-transform: uppercase;
+    }
+    
+    .small-img
+    {
+        width: 40px;
+        height: 40px;
+        background-color: darken($mainColorWhite, 5%);
+    }
+    .price
+    {
+        color: #7db921;
+        font-size: $mainFontSize;
+    }
+    button
+    {
+        font-size: $mainFontSize/1.3 !important;
+        padding: 0px 15px !important;
+        @include button($mainColorWhite, #d9d9d9, none, $mainColorWhite, #98ce44, none);
+    }
+    .fas
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+    a
+    {
+        @include a($mainFontSize*1.1, $mainFontWeight, $mainColorBlack, $mainColor2, $letterSpacing);
+    }
+    .link-green
+    {
+        text-decoration: underline;
+        @include a($mainFontSize, $mainFontWeight, #98ce44, $mainColor2, $letterSpacing);
+    }
+}

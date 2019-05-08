@@ -1,0 +1,19 @@
+#banner
+{
+    .breadcrumb
+    {
+        background-color: transparent;
+        a
+        {
+            @include a($mainFontSize/1.3, $mainFontWeight, $mainColorWhite, $mainColor2, $letterSpacing);
+        }
+    }
+    .bg-banner
+    {
+        background-image: url(../images/holiday-banner1.jpg);
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: 40% 0;
+    }
+}

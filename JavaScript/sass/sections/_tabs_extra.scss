@@ -1,0 +1,57 @@
+#tabs-extra
+{
+    .tabs
+    {
+        position: relative;
+        top: -37px;
+        button
+        {
+            margin-right: 5px;
+            opacity: .5;
+            &:hover
+            {
+                opacity: 1;
+            }
+            @include button($mainColor, $mainColorWhite, none, $mainColorBlack, $mainColorWhite, none);
+        }
+        button.tab.active
+        {
+            opacity: 1;
+            @include button($mainColorBlack, $mainColorWhite, none, $mainColorBlack, $mainColorWhite, none);
+        }
+        
+    }
+    .tabs-mobil
+    {
+        .fa-long-arrow-alt-left
+        {
+            width: 30px;
+            height: 20px;
+            background-color: #d9d9d9;
+            color: $mainColorWhite;
+        }
+        .fa-long-arrow-alt-right
+        {
+            @extend .fa-long-arrow-alt-left;
+            background-color: $mainColor2;
+        }
+    }
+    h5
+    {
+        color: $mainColor2;
+    }
+    p
+    {
+        font-size: $mainFontSize/1.1;
+        color: $mainColor;
+    }
+
+}
+@media(max-width: 991px)
+{
+    button
+    {
+        @include button($mainColor2, $mainColorWhite, none, $mainColorBlack, $mainColorWhite, none);
+    }
+}
+

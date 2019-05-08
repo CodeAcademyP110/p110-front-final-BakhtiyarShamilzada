@@ -1,0 +1,27 @@
+body
+{
+    background-color: #1a232f;
+    background-image: -webkit-radial-gradient(center center, circle cover, #273648, #0d1218 100%);
+
+}
+h1
+{
+    font-size: 4.1667em;
+    font-weight: 300;
+    line-height: 1.25em;
+    text-align: center;
+    color: #fdb714;
+}
+span
+{
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 25em;
+    text-align: center;
+    color: #01b7f2;
+    line-height: 1.0833em;
+}
+p
+{
+    color: #838383;
+}

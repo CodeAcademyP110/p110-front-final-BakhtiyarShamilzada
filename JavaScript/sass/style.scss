@@ -1,0 +1,26 @@
+@import 'lib/variables';
+@import 'lib/_common';
+@import 'lib/mixins';
+
+// import sections
+
+@import 'sections/header';
+@import 'sections/slider';
+@import 'sections/slider_extra';
+@import 'sections/tabs';
+@import 'sections/tabs_extra';
+@import 'sections/popular';
+@import 'sections/popular_more';
+@import 'sections/honeymon';
+@import 'sections/know';
+@import 'sections/price';
+@import 'sections/recommended';
+@import 'sections/featured';
+@import 'sections/cheap';
+@import 'sections/before';
+@import 'sections/tell';
+@import 'sections/details';
+@import 'sections/travelers';
+@import 'sections/contacts';
+@import 'sections/discover';
+@import 'sections/footer';

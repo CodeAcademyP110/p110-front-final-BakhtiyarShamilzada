@@ -1,0 +1,27 @@
+body
+{
+	font-family: $mainFont;
+	font-size: $mainFontSize;
+	font-style: $mainFontStyle;
+	font-weight: $mainFontWeight;
+	line-height: $lineHeight;
+}
+
+.blue
+{
+  background-color: #01b7f2;
+}
+
+ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a
+{
+	&:hover
+	{
+		text-decoration: none;
+	}
+}

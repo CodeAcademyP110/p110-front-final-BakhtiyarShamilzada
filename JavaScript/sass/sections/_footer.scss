@@ -1,0 +1,12 @@
+footer
+{
+    background-color: darken($mainColorWhite, 5%);
+    a
+    {
+        width: 28.8px;
+        height: 28.8px;
+        border: 1px solid $mainColor2;
+        border-radius: 100%;
+        padding: 5px 10px;
+    }
+}

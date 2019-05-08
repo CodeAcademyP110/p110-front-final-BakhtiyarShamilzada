@@ -1,0 +1,30 @@
+#popular-more
+{
+    background-color: darken($mainColorWhite, 5%);
+
+    a
+    {
+        color: $mainColor2;
+    }
+    small
+    {
+        color: $mainColor;
+    }
+    li
+    {
+        padding: 5px 0px;
+        color: $mainColor;
+        &:hover
+        {
+            color: $mainColor2;
+        }
+        a
+        {
+            color: $mainColor;
+            &:hover
+            {
+                color: $mainColor2;
+            }
+        }
+    }
+}

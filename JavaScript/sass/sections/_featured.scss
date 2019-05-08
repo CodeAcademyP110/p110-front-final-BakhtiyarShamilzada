@@ -1,0 +1,71 @@
+#featured
+{
+    background-color: darken($mainColorWhite, 5%);
+    .item
+    {
+        background-color: $mainColorWhite;
+        .img
+        {
+            overflow: hidden;
+            position: relative;
+            ::before
+            {
+                content: "";
+                transition: .3s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background: rgba(1,183,242,0.3);
+                z-index: 1;
+            }
+            .overlay
+            {
+                transition: .3s;
+                position: absolute;
+                top: 10px;
+                left: -100%;
+                padding: 5px 20px 5px 20px;
+                min-width: 130px;
+                background: #52332d;
+                z-index: 2;
+            }
+          
+            
+            &:hover
+            {
+                ::before
+                {
+                    opacity: 1;
+                }
+                .overlay
+                {
+                    left: 0;
+                }
+                
+            }
+        }
+        .img-contents
+        {
+            .fa-plane-departure
+            {
+                border: 1px solid orange;
+                padding: 10px 9px;
+                border-radius: 100%;
+            }
+            p
+            {
+                color: $mainColor;
+                font-size: $mainFontSize/1.3;
+                text-transform: uppercase;
+            }
+            span
+            {
+                color: #7db921;
+                font-size: $mainFontSize*1.5;
+            }
+        }
+    }
+}

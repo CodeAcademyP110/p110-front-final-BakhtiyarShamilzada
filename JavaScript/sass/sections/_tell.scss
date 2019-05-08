@@ -1,0 +1,18 @@
+#tell
+{
+    background-image: url(../images/global-map.jpg);
+    background-size: cover;
+    color: $mainColorWhite;
+    input
+    {
+        padding: 10px;
+        width: 70%;
+    }
+    button
+    {
+        width: 70%;
+        font-size: $mainFontSize !important;
+        padding: 15px 20px !important;
+        @include button($mainColorWhite, #98ce44, none, $mainColorWhite, #7eaa38, none);
+    }
+}
